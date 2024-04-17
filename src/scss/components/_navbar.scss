@@ -1,0 +1,109 @@
+nav {
+  background-color: var(--violet);
+  padding: 1.2rem 2.5rem;
+  color: var(--light-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid var(--light-violet);
+  .brand-container {
+    .brand {
+      h1 {
+        height: 100%;
+      }
+    }
+    .toggle-container {
+      display: none;
+      .toggle {
+      }
+    }
+  }
+  .links-container {
+    .links {
+      list-style-type: none;
+      display: flex;
+      gap: 4rem;
+      font-family: $bodyContent-font;
+      li {
+        a {
+          color: var(--light-white);
+          text-decoration: none;
+          font-weight: 600;
+          &:hover {
+            color: var(--span);
+            transition: 0.3s ease-in-out;
+          }
+        }
+        &:last-of-type {
+          a {
+            color: var(--span);
+            padding: 0.8rem 1rem;
+            border: 2px solid var(--span);
+            border-radius: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  nav {
+    position: relative;
+    padding: 1rem 2rem;
+    .brand-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      
+      .toggle-container {
+        display: block;
+        color: var(--span);
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1rem;
+        z-index: 40;
+        .toggle {
+          z-index: 40;
+          display: block;
+        }
+      }
+    }
+    .links-container {
+      z-index: 30;
+      background-color: var(--background);
+      // background-image: linear-gradient(101deg, var(--pink), var(--orange));
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
+      width: 0;
+      visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s ease-in-out;
+      .links {
+        flex-direction: column;
+        li {
+          a {
+            color: var(--violet);
+          }
+          &:last-of-type {
+            display: none;
+          }
+        }
+      }
+    }
+    .nav-visible {
+      width: 60vw;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
