@@ -1,7 +1,6 @@
 import React from "react";
 
 const Home = ({ homePage }) => {
-  console.log(homePage);
   const { title, content, buttonTitle, image } = homePage;
   return (
     <section className="home">

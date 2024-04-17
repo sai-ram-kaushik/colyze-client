@@ -4,5 +4,69 @@
     "content": "'Connect, Create, Captivate: Your Social Universe, Redefined' invites you to transform your online interactions into vibrant, meaningful experiences, where connection, creativity, and captivation converge for a redefined social landscape.",
     "buttonTitle": "Explore Projects",
     "image": "/community.svg"
+  },
+
+  "category": {
+    "title": "Top Categories",
+    "subTitle": "Lorem ipsum dolor sit amet.",
+    "categories": [
+      { "name": "Design Creative", "icon": "/icons/1.svg" },
+      { "name": "Sales Marketing", "icon": "/icons/2.svg" },
+      { "name": "Development IT", "icon": "/icons/3.svg" },
+      { "name": "Design Creative", "icon": "/icons/1.svg" },
+      { "name": "Sales Marketing", "icon": "/icons/2.svg" },
+      { "name": "Development IT", "icon": "/icons/3.svg" }
+    ]
+  },
+
+  "exploreProjects": {
+    "title": "Explore Projects",
+    "subTitle": "1,000+ unique projects",
+    "projects": [
+      {
+        "name": "Todo List",
+        "disc": "Create a Todo list with the help of reactjs and tailwind css",
+        "image": "/projects/1.webp"
+      },
+
+      {
+        "name": "Print Hello World",
+        "disc": "You need to print hello world using javascript",
+        "image": "/projects/2.webp"
+      },
+
+      {
+        "name": "Snake Game",
+        "disc": "Create a Snake Game with the help of reactjs and tailwind css",
+        "image": "/projects/3.webp"
+      },
+      {
+        "name": "Todo List",
+        "disc": "Create a Todo list with the help of reactjs and tailwind css",
+        "image": "/projects/1.webp"
+      },
+
+      {
+        "name": "Print Hello World",
+        "disc": "You need to print hello world using javascript",
+        "image": "/projects/2.webp"
+      },
+
+      {
+        "name": "Snake Game",
+        "disc": "Create a Snake Game with the help of reactjs and tailwind css",
+        "image": "/projects/3.webp"
+      },
+      {
+        "name": "Snake Game",
+        "disc": "Create a Snake Game with the help of reactjs and tailwind css",
+        "image": "/projects/3.webp"
+      },
+      {
+        "name": "Snake Game",
+        "disc": "Create a Snake Game with the help of reactjs and tailwind css",
+        "image": "/projects/3.webp"
+      }
+    ]
   }
 }
