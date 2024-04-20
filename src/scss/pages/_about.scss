@@ -1,0 +1,110 @@
+.about {
+  padding: 1.2rem 2.5rem;
+  .about-container {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      gap: 1.2rem;
+      h3 {
+        font-size: 3.3rem;
+        color: var(--violet);
+      }
+
+      p {
+        text-align: justify;
+        color: var(--black);
+        font-size: 1.5rem;
+      }
+
+      button {
+        padding: 0.8rem 1.5rem;
+        border: 2px solid var(--light-violet);
+        background-color: var(--light-violet);
+        border-radius: 0.5rem;
+        color: var(--light-white);
+
+        &:hover {
+          background-color: var(--violet);
+          transition: 0.3s ease-out;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+
+    .title {
+      font-size: 2.8rem;
+      color: var(--violet);
+    }
+
+    .team-content {
+      display: grid;
+      grid-template-columns: 14rem 14rem 14rem 14rem;
+      gap: 6rem;
+      margin-top: 3rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .member-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      img {
+        width: 200px;
+        height: 200px;
+        border: 2px solid var(--violet);
+        border-radius: 9999px;
+      }
+      h3 {
+        font-size: 2rem;
+        color: var(--violet);
+      }
+    }
+  }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .about-container {
+      display: flex;
+      flex-direction: column;
+
+      .image-container {
+        img {
+          width: 400px;
+          height: 400px;
+        }
+      }
+    }
+
+    .team-container {
+      .team-content {
+        display: grid;
+        grid-template-columns: 7rem 7rem;
+
+        .member-container {
+          img {
+            width: 150px;
+            height: 150px;
+          }
+
+          h3 {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}

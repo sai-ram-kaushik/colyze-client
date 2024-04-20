@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MdClose } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "/logo1.png";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   return (
@@ -11,9 +12,11 @@ const Navbar = () => {
           {/* <h1>
             COL<span>YZE</span>
           </h1> */}
-          <div className="image">
-          <img src={logo} />
-          </div>
+          <Link to="/">
+            <div className="image">
+              <img src={logo} />
+            </div>
+          </Link>
         </div>
 
         <div className="toggle-container">
@@ -30,13 +33,10 @@ const Navbar = () => {
       <div className={`links-container ${nav ? "nav-visible" : ""}`}>
         <ul className="links">
           <li>
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#">About Us</a>
-          </li>
-          <li>
-            <a href="#">Contact Us</a>
+            <a href="/about">About Us</a>
           </li>
           <li>
             <a href="#">Login / Signup</a>

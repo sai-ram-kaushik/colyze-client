@@ -6,8 +6,10 @@
   .footer-container {
     display: grid;
     grid-template-columns: 18rem 18rem 18rem 18rem;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: space-between;
+    padding: 3rem;
+    gap: 3rem;
 
     .about-company {
       display: flex;
@@ -18,6 +20,85 @@
           font-size: 2.9rem;
         }
       }
+    }
+
+    .about-us {
+      h3 {
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        li {
+          list-style: none;
+          a {
+            color: var(--light-white);
+            text-decoration: none;
+            font-size: 1.1rem;
+            &:hover {
+              color: var(--span);
+              transition: 0.3s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+
+    .contact-us {
+      h3 {
+        margin-bottom: 1rem;
+      }
+
+      .contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+
+      .contact-items {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+
+        .icon {
+          color: var(--span);
+        }
+      }
+    }
+
+    .privacy {
+      h3 {
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        li {
+          list-style: none;
+          a {
+            color: var(--light-white);
+            text-decoration: none;
+            font-size: 1.1rem;
+            &:hover {
+              color: var(--span);
+              transition: 0.3s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .footer-container {
+      display: grid;
+      grid-template-columns: 14rem;
     }
   }
 }

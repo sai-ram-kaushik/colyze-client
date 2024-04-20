@@ -6,15 +6,20 @@ import data from "./data/landing-page.json";
 import Category from "./components/Category";
 import Footer from "./components/Footer";
 import ExploreProjects from "./components/ExploreProjects";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import About from "./pages/About";
 
 const App = () => {
   return (
     <div className="app-container">
-      <Navbar />
-      <Home homePage={data.homePage} />
-      <Category category={data.category} />
-      <ExploreProjects exploreProjects={data.exploreProjects} />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home homePage={data.homePage} />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 };
