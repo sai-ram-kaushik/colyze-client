@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import { MdClose } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
+import logo from "/logo1.png";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   return (
     <nav>
       <div className="brand-container">
         <div className="brand">
-          <h1>
+          {/* <h1>
             COL<span>YZE</span>
-          </h1>
+          </h1> */}
+          <div className="image">
+          <img src={logo} />
+          </div>
         </div>
 
         <div className="toggle-container">

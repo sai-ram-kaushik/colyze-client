@@ -1,0 +1,23 @@
+.footer {
+  background-color: var(--violet);
+  margin-top: 5rem;
+  color: var(--light-white);
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 18rem 18rem 18rem 18rem;
+    align-items: center;
+    justify-content: center;
+
+    .about-company {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .title {
+        h3 {
+          font-size: 2.9rem;
+        }
+      }
+    }
+  }
+}

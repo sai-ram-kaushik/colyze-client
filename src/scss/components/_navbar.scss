@@ -9,8 +9,12 @@ nav {
   top: 0;
   border-bottom: 1px solid var(--light-violet);
   .brand-container {
+    display: flex;
+    align-items: center;
     .brand {
-      h1 {
+      max-width: 200px;
+      img {
+        width: 200px;
         height: 100%;
       }
     }
@@ -24,7 +28,7 @@ nav {
     .links {
       list-style-type: none;
       display: flex;
-      gap: 4rem;
+      gap: 3.5rem;
       font-family: $bodyContent-font;
       li {
         a {
@@ -58,7 +62,7 @@ nav {
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      
+
       .toggle-container {
         display: block;
         color: var(--span);
