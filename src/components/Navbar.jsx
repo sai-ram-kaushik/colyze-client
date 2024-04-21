@@ -9,9 +9,6 @@ const Navbar = () => {
     <nav>
       <div className="brand-container">
         <div className="brand">
-          {/* <h1>
-            COL<span>YZE</span>
-          </h1> */}
           <Link to="/">
             <div className="image">
               <img src={logo} />
