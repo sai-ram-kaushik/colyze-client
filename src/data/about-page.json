@@ -8,7 +8,7 @@
       "team": [
         { "name": "Annanya", "image": "/team/annanya.jpeg" },
         { "name": "Derick", "image": "/team/derick.jpeg" },
-        { "name": "Prateek", "image": "/team/prateek.jpeg" },
+        { "name": "Prateek", "image": "/team/prateek.png" },
         { "name": "Sairam", "image": "/team/sairam.jpeg" }
       ]
     }

@@ -2,10 +2,11 @@
 
 @import "components/navbar";
 @import "components/footer";
-
+@import "components/registrationpopup";
 
 @import "sections/home";
 @import "sections/category";
 @import "sections/exploreProjects";
 
-@import "pages/about"
+@import "pages/about";
+@import "pages/signup";

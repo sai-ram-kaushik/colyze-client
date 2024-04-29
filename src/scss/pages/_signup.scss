@@ -1,0 +1,36 @@
+.signup {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .signup-container {
+    width: 100%;
+    display: flex;
+
+    .image-container {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info-container {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        h3 {
+          font-size: 3.2rem;
+          font-weight: bold;
+          color: var(--dark-violet);
+        }
+      }
+    }
+  }
+}

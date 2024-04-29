@@ -93,13 +93,11 @@ nav {
       align-items: center;
       transition: 0.5s ease-in-out;
       .links {
+        align-items: center;
         flex-direction: column;
         li {
           a {
             color: var(--violet);
-          }
-          &:last-of-type {
-            display: none;
           }
         }
       }
